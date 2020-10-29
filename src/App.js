@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './styles/style.scss'
 
 // Components
+import Navbar from './components/Navbar'
 import Image from './components/Image.js'
 import Home from './components/Home.js'
 
