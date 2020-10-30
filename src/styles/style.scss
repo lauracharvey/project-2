@@ -40,13 +40,12 @@ main {
 }
 
 section .grid {
-  height: 450px;
-  width: 450px;
+  height: 500px;
+  width: 500px;
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
   grid-template-rows: repeat(8, 12.5%);
   margin: 0 0 20px 0;
-  // border: 6px solid #efe0dc;
 }
 
 .item {
@@ -133,16 +132,6 @@ input:focus {
 }
 
 button {
-  // background: #efe0dc;
-  // border: none;
-  // height: 30px;
-  // border-radius: 4px;
-  // font-family: "Montserrat", sans-serif;
-  // font-weight: 600;
-  // font-style: italic;
-  // text-transform: lowercase;
-  // padding-left: 15px;
-  // padding-right: 15px;
   background: none;
   border: solid 1px #a6a6a6;
   height: 30px;
@@ -298,10 +287,6 @@ p {
 }
 
 @media only screen and (max-width: 700px) {
-  section .grid {
-    height: 500px;
-    width: 500px;
-  }
 
   .selected {
     flex-direction: column;
@@ -348,8 +333,8 @@ p {
 
 @media only screen and (max-width: 500px) {
   section .grid {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
   }
 }
 
