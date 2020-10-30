@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const Image = (props) => {
@@ -15,22 +16,30 @@ const Image = (props) => {
   }, [])
 
   if (!image.people) {
-    return <div>
-      <h1>Loading ...</h1>
+    return <div className="loading">
+      <h1>Loading . . .</h1>
     </div>
   }
 
-    function imageDescription() {
-      if (!image.description) {
-        return 
-      } else {
-         return <div className="paragraph"><p>{image.description}</p></div>
-      }
+  function imageDescription() {
+    if (!image.description) {
+      return
+    } else {
+      return <div className="paragraph"><p>{image.description}</p></div>
     }
+  }
+
+  function imageDate() {
+    if (!image.dated) {
+      return
+    } else {
+      return <h3>{image.dated}</h3>
+    }
+  }
 
 
   return <section className="selected">
-
+    <button> <Link to="/project-2">Home</Link> </button>
     <div className="bg-1">
       <img className="single-image" src={image.primaryimageurl} alt={image.title}></img>
     </div>
@@ -44,7 +53,7 @@ const Image = (props) => {
         <h2>Culture</h2>
         <h3>{image.culture}</h3>
         <h2>Date</h2>
-        <h3>{image.dated}</h3>
+        {imageDate()}
         {imageDescription()}
       </div>
 
@@ -56,8 +65,6 @@ const Image = (props) => {
 }
 
 export default Image
-
-
 
 
 // import React, { useState, useEffect } from 'react'
@@ -72,6 +79,7 @@ export default Image
 //       .then(resp => {
 //         const data = resp.data
 //         updateImage(data)
+//         console.log(objectId)
 //       })
 //   }, [])
 
@@ -81,19 +89,34 @@ export default Image
 //     </div>
 //   }
 
+//     function imageDescription() {
+//       if (!image.description) {
+//         return 
+//       } else {
+//          return <div className="paragraph"><p>{image.description}</p></div>
+//       }
+//     }
+
 
 //   return <section className="selected">
-
 
 //     <div className="bg-1">
 //       <img className="single-image" src={image.primaryimageurl} alt={image.title}></img>
 //     </div>
 //     <div className="bg-2">
-//       <h2>Title: {image.title}</h2>
-//       <h2>Artist: {image.people[0].displayname} </h2>
-//       <h2>Medium: {image.medium}</h2>
-//       <h2>Date: {image.dated}</h2>
-//       <h2>Culture: {image.culture}</h2>
+//       <div className="box">
+//         <h1>{image.title}</h1>
+//         <h2>Artist</h2>
+//         <h3>{image.people[0].displayname}</h3>
+//         <h2>Medium</h2>
+//         <h3>{image.medium}</h3>
+//         <h2>Culture</h2>
+//         <h3>{image.culture}</h3>
+//         <h2>Date</h2>
+//         <h3>{image.dated}</h3>
+//         {imageDescription()}
+//       </div>
+
 //     </div>
 
 
