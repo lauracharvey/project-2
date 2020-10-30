@@ -10,7 +10,7 @@ This was joint project from General Assembly, completed in week 6 of the Softwar
 
 You can see our solution [here](https://lauracharvey.github.io/project-2/).
 
-##Brief 
+## Brief 
 
 
 * Consume a public API 
@@ -20,13 +20,13 @@ You can see our solution [here](https://lauracharvey.github.io/project-2/).
 * Have semantically clean HTML - you make sure you write HTML that makes structural sense rather than thinking about how it might look, which is the job of CSS.
 * Be deployed online and accessible to the public.
 
-##Tech Stack
+## Tech Stack
 
 * React
 * SCSS
 * Git & GitHub
 
-##Approach
+## Approach
 
 We were tasked with identifying a public API that we could use for this project, my team mate found the Harvard Art Museum API and, being a designer, came up with the initial grid layout idea.
 
@@ -48,7 +48,7 @@ We intially had issues displaying the Artist of the image as it was stored as an
 
 ![carbon screenshot of code](https://i.imgur.com/EyNjycn.png)
 
-##Conclusion
+## Conclusion
 
 I thoroughly enjoyed collaborating on a project and both being creative I think we came up with a really aesthetically pleasing design.
 
