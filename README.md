@@ -10,8 +10,16 @@ This was joint project from General Assembly, completed in week 6 of the Softwar
 
 You can see our solution [here](https://lauracharvey.github.io/project-2/).
 
-## Brief 
+## Running Locally
 
+1. Fork it
+
+In your terminal:
+
+2. 'npm i'
+3. 'npm run serve'
+
+## Brief 
 
 * Consume a public API 
 * Have several components - At least one classical and one functional.
